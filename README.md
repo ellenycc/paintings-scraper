@@ -38,7 +38,7 @@ The script significantly improved efficieny in our internal workflow,and enabled
 ### 1. Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/paintings-scraper.git
+git clone https://github.com/ellenycc/paintings-scraper.git
 cd paintings-scraper
 ```
 
