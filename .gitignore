@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Output
+output/
+*.xlsx
+
+# Virtual environments
+venv/
+
+# Environment variables
+.env
+
+# Pipenv lock file (optional, see note above)
+# Pipfile.lock
+
+# IDE/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Test/coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Packaging/build artifacts
+*.egg-info/
+ngscraper.egg-info/
+build/
+dist/
