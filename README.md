@@ -2,9 +2,7 @@
 
 **Automated data extraction tool built to streamline art collection documentation at The National Gallery (London)**
 
----
-
-## 👩‍💻 About the Project
+## About the Project
 
 As a Digital Administrator at The National Gallery, I developed this web scraping script to address a real-world need: consolidating metadata for over 2,500 paintings into a centralised, searchable database. This project demonstrates my ability to:
 
@@ -13,7 +11,6 @@ As a Digital Administrator at The National Gallery, I developed this web scrapin
 - Apply technical solutions to improve team workflows
 - Build tools that scale across departments
 
----
 
 ## Features
 
@@ -29,7 +26,6 @@ As a Digital Administrator at The National Gallery, I developed this web scrapin
 - Saves structured data to Excel for team-wide access and archival
 - Modular structure for easy extension (e.g. image resolution, AI tagging)
 
----
 
 ## Tech Stack
 
@@ -42,7 +38,6 @@ As a Digital Administrator at The National Gallery, I developed this web scrapin
 | `pytest`       | Automated testing                 |
 | `requests-mock`| Mocking web requests in tests     |
 
----
 
 ## Project Structure
 
@@ -60,7 +55,6 @@ ng-scraper/
 └── README.md
 ```
 
----
 
 ## Impact
 
@@ -68,7 +62,6 @@ ng-scraper/
 ✅ Created a scalable solution that can be extended to include image data and AI features
 ✅ Demonstrated practical application of software development in a museum environment
 
----
 
 ## Installation
 
@@ -91,26 +84,6 @@ python main.py
 
 By default, the output Excel file will be saved in the `output/` directory as `paintings_data.xlsx`.
 
-
-## Testing
-
-To run the test suite (requires `pytest` and `requests-mock`):
-
-```bash
-pipenv install --dev pytest requests-mock
-pytest
-```
-
-## Troubleshooting
-
-- **ModuleNotFoundError:** Make sure you have installed the package in editable mode:
-  ```bash
-  pip install -e .
-  ```
-- **Missing dependencies:** Ensure you have run `pipenv install`.
-- **Output directory error:** If you get an error about the `output/` directory, create it manually or ensure the script creates it.
-
-
 ## Future Additions
 - Image metadata extractor (TIFF, PSB pixel dimensions)
 - AI-powered image tagging (e.g. subjects, styles, artists)
@@ -118,4 +91,4 @@ pytest
 
 ## About Me
 This project is part of my journey transitioning into software engineering.
-If you're interested in collaborating or want to chat about automation, cultural tech, or applying Python in the arts, feel free to reach out on GitHub[https://github.com/ellenycc] or connect on LinkedIn[https://www.linkedin.com/in/ellen-chan-01656731/]!
+If you're interested in collaborating or want to chat about automation, cultural tech, or applying Python in the arts, feel free to reach out on GitHub(https://github.com/ellenycc) or connect on LinkedIn(https://www.linkedin.com/in/ellen-chan-01656731/)!
