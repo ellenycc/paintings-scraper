@@ -27,6 +27,11 @@ MOCK_HTML = """
         <dd><a href="#">Room 1</a></dd>
       </div>
     </dl>
+    <div class="image-container">
+    <div class="image"
+      style="background-image: url('/default.jpg');">
+    </div>
+    </div>
   </body>
 </html>
 """
@@ -41,4 +46,5 @@ def test_extract_painting_details(requests_mock):
     assert result['Date made'] == '1923'
     assert result['Inventory number'] == 'NG123'
     assert result['Location'] == 'Room 1'
-    assert result['url'] == url
+    assert result['Painting URL'] == url
+    assert result['Thumbnail URL'] == 'https://www.nationalgallery.org.uk/default.jpg'

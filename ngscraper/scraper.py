@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from typing import Dict
 from ngscraper.sitemap import HEADERS
+from ngscraper.thumbnail import get_thumbnail_url
 
 
 def extract_painting_details(painting_url: str) -> Dict:
@@ -27,7 +28,8 @@ def extract_painting_details(painting_url: str) -> Dict:
             'Date made': 'N/A',
             'Inventory number': 'N/A',
             'Location': 'N/A',
-            'url': painting_url
+            'Painting URL': painting_url,
+            'Thumbnail URL': 'N/A'
         }
 
     soup = BeautifulSoup(response.content, 'html.parser')
@@ -39,13 +41,16 @@ def extract_painting_details(painting_url: str) -> Dict:
         'Date made': 'N/A',
         'Inventory number': 'N/A',
         'Location': 'N/A',
-        'url': painting_url
+        'Painting URL': painting_url,
+        'Thumbnail URL': 'N/A'
     }
 
+    # Extract painting titles
     title_element = soup.find('div', {'class': 'short-title'})
     if title_element:
         details['Title'] = title_element.get_text(strip=True)
 
+    # Extract artist, artist dates, date made, inventory number and location
     for dt in soup.find_all('dt'):
         label = dt.get_text(strip=True)
         dd = dt.find_next_sibling('dd')
@@ -60,5 +65,12 @@ def extract_painting_details(painting_url: str) -> Dict:
             details['Inventory number'] = dd.get_text(strip=True)
         elif label == 'Location' and dd and dd.find('a'):
             details['Location'] = dd.find('a').get_text(strip=True)
+    
+    # Extract thumbnail url
+    image_divs = soup.find_all('div', class_='image')
+    for div in image_divs:
+        style = div.get('style')
+        if style and 'background-image' in style:
+            details['Thumbnail URL'] = get_thumbnail_url(style)
 
     return details
