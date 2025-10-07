@@ -1,10 +1,10 @@
 # National Gallery Painting Scraper
 
-**Automated data extraction tool built to streamline art collection documentation at The National Gallery (London)**
+**Automated data extraction tool built to streamline art collection documentation at The National Gallery**
 
 ## About the Project
 
-As a Digital Administrator at The National Gallery, I developed this web scraping script to address a real-world need: consolidating metadata for over 2,500 paintings into a centralised, searchable database. This project demonstrates my ability to:
+As a Digital Administrator at The National Gallery, I developed this web scraping script to consolidate the metadata for over 2,500 paintings into a centralised, searchable database. This project demonstrates my ability to:
 
 - Automate repetitive manual tasks with Python
 - Work with structured and unstructured web data
@@ -43,15 +43,15 @@ As a Digital Administrator at The National Gallery, I developed this web scrapin
 
 ```
 ng-scraper/
-├── main.py                # Entry point for the scraper
+├── main.py                
 ├── ngscraper/
 │   ├── __init__.py
-│   ├── scraper.py         # Core scraping logic
-│   └── sitemap.py         # Sitemap parsing utilities
-├── output/                # Output Excel files
-├── tests/                 # Test suite
-├── Pipfile                # Dependency management
-├── setup.py               # Package configuration
+│   ├── scraper.py        
+│   └── sitemap.py         
+├── output/                
+├── tests/                 
+├── Pipfile                
+├── setup.py              
 └── README.md
 ```
 
