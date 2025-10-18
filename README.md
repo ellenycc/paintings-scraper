@@ -4,7 +4,7 @@
 
 ## About the Project
 
-As a Digital Administrator at The National Gallery, I developed this web scraping script to consolidate the metadata for over 2,500 paintings into a centralised, searchable database. This project demonstrates my ability to:
+As a Digital Administrator at The National Gallery, I built this automation script to consolidate the metadata for over 2,500 paintings into a centralised, searchable database. This project demonstrates my ability to:
 
 - Automate repetitive manual tasks with Python
 - Work with structured and unstructured web data
@@ -60,7 +60,6 @@ ng-scraper/
 
 ✅ Reduced hours of manual data entry  
 ✅ Created a scalable solution that can be extended to include image data and AI features
-✅ Demonstrated practical application of software development in a museum environment
 
 
 ## Installation
@@ -88,7 +87,3 @@ By default, the output Excel file will be saved in the `output/` directory as `p
 - Image metadata extractor (TIFF, PSB pixel dimensions)
 - AI-powered image tagging (e.g. subjects, styles, artists)
 - Web UI to browse and search the collection
-
-## About Me
-This project is part of my journey transitioning into software engineering.
-If you're interested in collaborating or want to chat about automation, cultural tech, or applying Python in the arts, feel free to reach out on GitHub(https://github.com/ellenycc) or connect on LinkedIn(https://www.linkedin.com/in/ellen-chan-01656731/)!
